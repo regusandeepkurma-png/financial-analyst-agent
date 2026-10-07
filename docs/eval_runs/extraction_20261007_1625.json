@@ -1,0 +1,247 @@
+{
+  "doc1": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 68,
+        "pred": {
+          "value": 68.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue of $68 billion was up 73% year-over-year, accelerating from Q3.",
+          "period": "Q4 2026"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 75,
+        "pred": {
+          "value": 75.0,
+          "unit": "percent",
+          "basis": "GAAP",
+          "quote": "GAAP gross margin was 75%, and non-GAAP gross margin was 75.2%, increasing sequentially as Blackwell continued to ramp.",
+          "period": "Q4 2026"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 78,
+        "pred": {
+          "value": 78.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue is expected to be $78 billion, plus or minus 2%.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "NOT_IN_SCHEMA",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      }
+    ],
+    "issues": [
+      "metric:free_cash_flow: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:tax_rate:GAAP: quote snapped to exact sentence",
+      "guidance:tax_rate:non-GAAP: quote snapped to exact sentence"
+    ],
+    "retries": 0
+  },
+  "doc2": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 82,
+        "pred": {
+          "value": 82.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue of $82 billion was up 85% year-over-year and 20% sequentially.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 74.9,
+        "pred": {
+          "value": 74.9,
+          "unit": "percent",
+          "basis": "GAAP",
+          "quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 91,
+        "pred": {
+          "value": 91.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue is expected to be $91 billion, plus or minus 2%.",
+          "period": "Q2 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "NOT_IN_SCHEMA",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      }
+    ],
+    "issues": [
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:gross_margin: quote snapped to exact sentence",
+      "metric:gross_margin: quote snapped to exact sentence",
+      "metric:free_cash_flow: basis removed (not stated in quote)",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:tax_rate:GAAP: quote snapped to exact sentence"
+    ],
+    "retries": 0
+  },
+  "doc3": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 96221,
+        "pred": {
+          "value": 96221.0,
+          "unit": "USD_million",
+          "basis": null,
+          "quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "MISSING",
+        "truth": 75.0,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "operating_income",
+        "status": "NOT_IN_SCHEMA",
+        "truth": 63734,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "CORRECT",
+        "truth": 59688,
+        "pred": {
+          "value": 59688.0,
+          "unit": "USD_million",
+          "basis": "GAAP",
+          "quote": "Net income $59,688 $58,321 $26,422 126 % 2 %",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "CORRECT",
+        "truth": 2.46,
+        "pred": {
+          "value": 2.46,
+          "unit": "USD",
+          "basis": "GAAP",
+          "quote": "Diluted earnings per share $2.46 $2.39 $1.08 128 % 3 %",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 108.0,
+        "pred": {
+          "value": 108.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Outlook Outlook for the third quarter of fiscal 2027 is as follows: \u2022 Revenue is expected to be $108.0 billion, plus or minus 2%.",
+          "period": "Q3 FY27"
+        },
+        "grounded": true
+      }
+    ],
+    "issues": [
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:gross_margin: quote not found in source",
+      "metric:gross_margin: quote not found in source",
+      "metric:operating_margin: number 66.5 not in its quote",
+      "metric:operating_margin: number 66.6 not in its quote",
+      "metric:net_income: quote not found in source",
+      "metric:net_income: quote not found in source",
+      "metric:eps: quote not found in source",
+      "metric:eps: quote not found in source",
+      "metric:free_cash_flow: quote not found in source",
+      "guidance:operating_expenses:non-GAAP: quote not found in source",
+      "metric:gross_margin: value 75.0 not found next to its label, dropped",
+      "metric:gross_margin: value 75.0 not found next to its label, dropped",
+      "metric:operating_margin: value 66.5 not found next to its label, dropped",
+      "metric:operating_margin: value 66.6 not found next to its label, dropped",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:operating_margin: quote snapped to exact sentence",
+      "metric:operating_margin: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:gross_margin:GAAP: quote snapped to exact sentence",
+      "guidance:operating_expenses:GAAP: quote snapped to exact sentence",
+      "guidance:tax_rate:GAAP: unsupported midpoint=17.0 removed"
+    ],
+    "retries": 0
+  }
+}
