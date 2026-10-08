@@ -1,0 +1,63 @@
+{
+  "result": {
+    "overall_tone": "positive",
+    "tone_score": 0.8,
+    "prepared_remarks_score": null,
+    "qa_score": null,
+    "hedging_level": "medium",
+    "hedging_examples": [
+      {
+        "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+        "note": "Uses 'plus or minus' to indicate uncertainty around the margin forecast."
+      },
+      {
+        "quote": "We expect GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to our tax environment.",
+        "note": "Uses a range ('between 16.0% and 18.0%') to indicate uncertainty about tax rate."
+      },
+      {
+        "quote": "We are not assuming any Data Center compute revenue from China in our outlook.",
+        "note": "Explicitly states an assumption that is not guaranteed, hedging the China revenue contribution."
+      }
+    ],
+    "positive_signals": [
+      {
+        "quote": "Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+        "note": "Highlights record revenue and strong growth percentages."
+      },
+      {
+        "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially, driven by the ramp of our Blackwell Ultra infrastructure.",
+        "note": "Emphasizes record Data Center revenue and attributes growth to Blackwell Ultra."
+      },
+      {
+        "quote": "Hyperscale revenue more than doubled from a year ago and increased 13% sequentially on the strength of Blackwell Ultra.",
+        "note": "Highlights significant growth in Hyperscale revenue and its driver."
+      },
+      {
+        "quote": "Edge Computing revenue for the second quarter was $7.2 billion, up 27% from a year ago and up 13% sequentially.",
+        "note": "Shows strong growth in Edge Computing revenue."
+      },
+      {
+        "quote": "We continue to make strategic commitments across our supply, infrastructure, and partner ecosystems to capitalize on the substantial growth opportunities ahead of us.",
+        "note": "Signals confidence in future growth through strategic commitments."
+      }
+    ],
+    "negative_signals": [
+      {
+        "quote": "Shipments of Data Center Hopper products to China during the quarter were less than 1% of Data Center revenue.",
+        "note": "Indicates minimal exposure to China Data Center revenue, which could be a concern."
+      },
+      {
+        "quote": "Edge Computing revenue for the second quarter was $7.2 billion, up 27% from a year ago and up 13% sequentially. The increases were driven by strong sales of Blackwell workstations, partially offset by slower consumer PC sales that were tempered by elevated memory and systems prices.",
+        "note": "Notes slower consumer PC sales and pricing pressures as a headwind."
+      }
+    ],
+    "analyst_pushback": []
+  },
+  "issues": [
+    "hedging_examples: quote not found, dropped: We expect revenue to be $108.0 billion, plus or minus 2%.",
+    "hedging_examples: quote not found, dropped: We expect GAAP and non-GAAP operating expenses are expected to be approximately "
+  ],
+  "retries": 0,
+  "quotes_kept": 10,
+  "quotes_total": 12
+}

@@ -1,0 +1,106 @@
+{
+  "result": {
+    "overall_tone": "positive",
+    "tone_score": 0.85,
+    "prepared_remarks_score": 0.9,
+    "qa_score": 0.75,
+    "hedging_level": "medium",
+    "hedging_examples": [
+      {
+        "quote": "We expect sequential revenue growth throughout calendar 2026, exceeding what was included in the $500 billion Blackwell and Rubin revenue opportunity we shared last year.",
+        "note": "Uses 'expect' and conditional language indicating uncertainty about future growth."
+      },
+      {
+        "quote": "We believe we have inventory and supply commitments in place to address future demand, including shipments, extending into calendar 2027.",
+        "note": "Uses 'believe' and conditional phrasing about future supply and demand."
+      },
+      {
+        "quote": "We expect most of our growth to be driven by Data Center.",
+        "note": "Uses 'expect' rather than definitive statement about growth drivers."
+      },
+      {
+        "quote": "We will keep you updated on our progress as we prepare for the Vera Rubin transition.",
+        "note": "Uses 'will keep you updated' indicating future communication rather than current certainty."
+      },
+      {
+        "quote": "It's too early yet to determine how much in terms of that Vera Rubin, that beginning ramp will start in the second half and we'll get through it.",
+        "note": "Explicitly states uncertainty about timing of Vera Rubin ramp."
+      }
+    ],
+    "positive_signals": [
+      {
+        "quote": "We delivered another outstanding quarter with record revenue, operating income and free cash flow.",
+        "note": "Management highlights record financial performance as a positive indicator."
+      },
+      {
+        "quote": "Total revenue of $68 billion was up 73% year-over-year, accelerating from Q3.",
+        "note": "Quantifies strong year-over-year growth as a positive signal."
+      },
+      {
+        "quote": "Data center generated revenue of $194 billion, up 68% year-over-year.",
+        "note": "Highlights significant growth in core data center business."
+      },
+      {
+        "quote": "We expect sequential revenue growth throughout calendar 2026, exceeding what was included in the $500 billion Blackwell and Rubin revenue opportunity we shared last year.",
+        "note": "Projects continued growth beyond current expectations as a positive outlook."
+      }
+    ],
+    "negative_signals": [
+      {
+        "quote": "We have yet to generate any revenue and we do not know whether any imports will be allowed into China.",
+        "note": "Expresses uncertainty about China market access and revenue potential."
+      },
+      {
+        "quote": "Our competitors in China, bolstered by recent IPOs, are making progress and have the potential to disrupt the structure of the global AI industry over the long-term.",
+        "note": "Acknowledges competitive threats from Chinese rivals as a potential risk."
+      },
+      {
+        "quote": "While small amounts of H200 products for China-based customers were approved by the US government, we have yet to generate any revenue and we do not know whether any imports will be allowed into China.",
+        "note": "Highlights regulatory uncertainty affecting China revenue potential."
+      },
+      {
+        "quote": "We expect supply constraints to be the headwind to gaming in Q1 and beyond.",
+        "note": "Identifies supply constraints as a negative factor for gaming segment."
+      },
+      {
+        "quote": "The economics are poor today, but it's going to improve over time.",
+        "note": "Acknowledges current poor economics for space data centers as a limitation."
+      }
+    ],
+    "analyst_pushback": [
+      {
+        "topic": "Customer CapEx sustainability and growth",
+        "analyst_quote": "How confident are you about your customers' ability to continue to grow their CapEx? And if their CapEx doesn't grow, can NVIDIA still find a way to grow in that envelope?",
+        "management_quote": "I am confident in their cash flow growing. And the reason for that is very simple. We have now seen the inflection of agentic AI and the usefulness of agents across the world in enterprises everywhere. You're seeing incredible compute demand because of it.",
+        "evasive": false
+      },
+      {
+        "topic": "Gaming growth and memory constraints",
+        "analyst_quote": "Do you think gaming can still grow year-over-year in fiscal 2027, or will that be under more pressure given memory?",
+        "management_quote": "As much as we would love to have additional more supply, we do believe for a couple quarters, it is going to be very tight. If things improve by the end of the year, there is an opportunity to think about what that is from a year-over-year growth. But it's still too early for us to know at this time.",
+        "evasive": true
+      },
+      {
+        "topic": "Gross margin sustainability",
+        "analyst_quote": "Should we read into the visibility on supply being available into calendar 2027 that it's sustainable until then?",
+        "management_quote": "",
+        "evasive": false
+      },
+      {
+        "topic": "Vera CPU standalone solution importance",
+        "analyst_quote": "What's the importance that Vera plays in this architecture evolution as we move forward?",
+        "management_quote": "",
+        "evasive": false
+      }
+    ]
+  },
+  "issues": [
+    "positive_signals: quote not found, dropped: Our pace of innovation, particularly at our scale, is unmatched, fueled by an an",
+    "analyst_pushback: management quote not found, cleared",
+    "analyst_pushback: analyst quote not found, dropped: Does that imply your non-hyperscale customers grew faster. And if so, what are t",
+    "analyst_pushback: management quote not found, cleared"
+  ],
+  "retries": 0,
+  "quotes_kept": 18,
+  "quotes_total": 20
+}

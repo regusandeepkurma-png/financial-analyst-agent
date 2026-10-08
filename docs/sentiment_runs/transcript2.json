@@ -1,0 +1,79 @@
+{
+  "result": {
+    "overall_tone": "positive",
+    "tone_score": 0.85,
+    "prepared_remarks_score": 0.9,
+    "qa_score": 0.75,
+    "hedging_level": "medium",
+    "hedging_examples": [
+      {
+        "quote": "subject to",
+        "note": "Used in forward-looking statement disclaimer"
+      },
+      {
+        "quote": "depends on",
+        "note": "Used when discussing supply constraints"
+      },
+      {
+        "quote": "we expect",
+        "note": "Used when describing future growth expectations"
+      },
+      {
+        "quote": "could",
+        "note": "Used when describing potential outcomes"
+      }
+    ],
+    "positive_signals": [
+      {
+        "quote": "revenue of $82 billion was up 85% year-over-year and 20% sequentially",
+        "note": "Strong revenue growth metrics"
+      },
+      {
+        "quote": "record $20 billion to our shareholders",
+        "note": "Significant shareholder returns"
+      },
+      {
+        "quote": "Blackwell systems across our diverse end customer base",
+        "note": "Successful product adoption"
+      },
+      {
+        "quote": "demand for GB300 NVL72 was particularly strong",
+        "note": "Strong demand for new architecture"
+      },
+      {
+        "quote": "Data Center revenue of $75 billion was up 92% year-over-year",
+        "note": "Robust data center growth"
+      }
+    ],
+    "negative_signals": [
+      {
+        "quote": "uncertain whether any imports will be allowed into the country",
+        "note": "Supply uncertainty for China market"
+      },
+      {
+        "quote": "we are not including any China Data Center compute revenue in our outlook",
+        "note": "Exclusion of China revenue from guidance"
+      }
+    ],
+    "analyst_pushback": [
+      {
+        "topic": "change in segmentation and philosophy behind new reporting structure",
+        "analyst_quote": "What drove the change in segmentation? What's the philosophy behind giving us the numbers that way?",
+        "management_quote": "We wanted you to understand our business better. AI is very diverse and computing is diverse.",
+        "evasive": false
+      },
+      {
+        "topic": "competitive differences between segments and CPU number",
+        "analyst_quote": "How do you see that across the two segments as well?",
+        "management_quote": "Our business has now evolved and grown to such a large scale, it's helpful to segment it so that you have a better understanding of how our business works.",
+        "evasive": false
+      }
+    ]
+  },
+  "issues": [
+    "hedging_examples: quote not found, dropped: likely"
+  ],
+  "retries": 0,
+  "quotes_kept": 13,
+  "quotes_total": 14
+}
