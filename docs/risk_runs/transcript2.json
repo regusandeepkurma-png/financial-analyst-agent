@@ -1,16 +1,33 @@
 {
   "result": {
-    "overall_risk_level": "low",
-    "risks": []
+    "overall_risk_level": "high",
+    "risks": [
+      {
+        "category": "competition",
+        "title": "Competitive pressure in AI infrastructure and CPU markets",
+        "severity": 4,
+        "status": "potential",
+        "quantified": false,
+        "quote": "The LPX is designed for low latency and high token rate, but its throughput is low. Its model size capacity is low. And its context processing, its ability to absorb a lot of context, for example, for software coding, for agentic workloads, its ability to absorb a great deal of context is lower.",
+        "explanation": "The quote highlights limitations in NVIDIA's LPX architecture compared to competitors' offerings, signaling potential competitive risk in niche AI inference markets."
+      },
+      {
+        "category": "regulatory_export",
+        "title": "Export restrictions on AI chips to China",
+        "severity": 4,
+        "status": "current",
+        "quantified": false,
+        "quote": "As a result, consistent with last quarter, we are not including any China Data Center compute revenue in our outlook.",
+        "explanation": "Management explicitly states they are excluding China Data Center compute revenue due to uncertainty around export licenses, directly impacting current revenue visibility."
+      }
+    ]
   },
   "issues": [
-    "risk quote not found, dropped: The $20 billion is for standalone CPU. And remember, we have Vera is used in thr",
     "risk quote not found, dropped: GAAP and non-GAAP operating expenses were up 12% sequentially, primarily due to ",
-    "risk quote not found, dropped: Demand for AI infrastructure continues to expand at an unprecedented pace. The b",
-    "judge rejected: Supply constraints on Blackwell and Rubin GPUs",
-    "judge rejected: Restrictions on China Data Center compute revenue"
+    "judge rejected: Supply constraints on Blackwell and Rubin GPUs | QUOTE: In Q1, we increased total supply, inclusive of inventory, purchase commitments, and prepaids to $145 billion. While we are not immune to supply challenges, we r",
+    "judge rejected: Macroeconomic uncertainty affecting enterprise AI adoption | QUOTE: Demand for AI infrastructure continues to expand at an unprecedented pace. The build-out of AI factories is accelerating."
   ],
   "retries": 0,
-  "quotes_kept": 2,
+  "quotes_kept": 4,
   "quotes_total": 5
 }
