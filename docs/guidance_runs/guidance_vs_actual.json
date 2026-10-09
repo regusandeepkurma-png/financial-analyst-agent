@@ -1,0 +1,91 @@
+{
+  "doc1_to_doc2": [
+    {
+      "metric": "revenue",
+      "basis": null,
+      "guided_period": "Q1 2027",
+      "guided_quote": "Total revenue is expected to be $78 billion, plus or minus 2%.",
+      "guided": 78.0,
+      "guided_unit": "USD_billion",
+      "actual": 82.0,
+      "actual_unit": "USD_billion",
+      "actual_basis": null,
+      "actual_period": "Q1 2027",
+      "period_match": true,
+      "diff": 5.13,
+      "diff_unit": "%",
+      "verdict": "above",
+      "actual_quote": "Total revenue of $82 billion was up 85% year-over-year and 20% sequentially."
+    },
+    {
+      "metric": "gross_margin",
+      "basis": "GAAP",
+      "guided_period": "Q1 2027",
+      "guided_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points.",
+      "guided": 74.9,
+      "guided_unit": "percent",
+      "actual": 74.9,
+      "actual_unit": "percent",
+      "actual_basis": "GAAP",
+      "actual_period": "Q1 2027",
+      "period_match": true,
+      "diff": 0.0,
+      "diff_unit": " pts",
+      "verdict": "in_line",
+      "actual_quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments."
+    },
+    {
+      "metric": "gross_margin",
+      "basis": "non-GAAP",
+      "guided_period": "Q1 2027",
+      "guided_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points.",
+      "guided": 75.0,
+      "guided_unit": "percent",
+      "actual": 75.0,
+      "actual_unit": "percent",
+      "actual_basis": "non-GAAP",
+      "actual_period": "Q1 2027",
+      "period_match": true,
+      "diff": 0.0,
+      "diff_unit": " pts",
+      "verdict": "in_line",
+      "actual_quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments."
+    }
+  ],
+  "doc2_to_doc3": [
+    {
+      "metric": "revenue",
+      "basis": null,
+      "guided_period": "Q2 2027",
+      "guided_quote": "Total revenue is expected to be $91 billion, plus or minus 2%.",
+      "guided": 91.0,
+      "guided_unit": "USD_billion",
+      "actual": 96221.0,
+      "actual_unit": "USD_million",
+      "actual_basis": null,
+      "actual_period": "Q2 FY2027",
+      "period_match": true,
+      "diff": 5.74,
+      "diff_unit": "%",
+      "verdict": "above",
+      "actual_quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially."
+    },
+    {
+      "metric": "gross_margin",
+      "basis": "GAAP",
+      "guided_period": "Q2 2027",
+      "guided_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points.",
+      "guided": 74.9,
+      "guided_unit": "percent",
+      "actual": 75.0,
+      "actual_unit": "percent",
+      "actual_basis": "GAAP",
+      "actual_period": "Q2 FY2027",
+      "period_match": true,
+      "diff": 0.1,
+      "diff_unit": " pts",
+      "verdict": "in_line",
+      "actual_quote": "NVIDIA CORPORATION RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES ($ In millions, except per share data) (Unaudited) Three Months Ended Six Months Ended "
+    }
+  ]
+}
