@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.1",
+  "sentiment": {
+    "overall_tone": "positive",
+    "tone_score": 0.8,
+    "prepared_remarks_score": null,
+    "qa_score": null,
+    "hedging_level": "medium",
+    "hedging_examples": [
+      {
+        "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+        "note": "Includes a range and a qualifier 'expected'."
+      },
+      {
+        "quote": "We are not assuming any Data Center compute revenue from China in our outlook.",
+        "note": "Explicitly states an assumption that is not guaranteed."
+      },
+      {
+        "quote": "We expect to reassign these data center leases to third parties.",
+        "note": "Uses 'expect' which is less certain than a firm commitment."
+      },
+      {
+        "quote": "Our commitments increased from $119 billion last quarter to $279 billion, primarily related to the procurement of memory.",
+        "note": "Describes commitments as having increased, implying future obligations are not fixed."
+      }
+    ],
+    "positive_signals": [
+      {
+        "quote": "Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+        "note": "Highlights record revenue and strong growth percentages."
+      },
+      {
+        "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially, driven by the ramp of our Blackwell Ultra infrastructure.",
+        "note": "Emphasizes record performance and the contribution of a new product."
+      },
+      {
+        "quote": "Hyperscale revenue more than doubled from a year ago and increased 13% sequentially on the strength of Blackwell Ultra.",
+        "note": "Shows significant growth in a key segment."
+      },
+      {
+        "quote": "Edge Computing revenue for the second quarter was $7.2 billion, up 27% from a year ago and up 13% sequentially.",
+        "note": "Indicates solid growth in Edge Computing."
+      },
+      {
+        "quote": "We continue to make strategic commitments across our supply, infrastructure, and partner ecosystems to capitalize on the substantial growth opportunities ahead of us.",
+        "note": "Signals ongoing investment and confidence in future growth."
+      }
+    ],
+    "negative_signals": [
+      {
+        "quote": "Shipments of Data Center Hopper products to China during the quarter were less than 1% of Data Center revenue.",
+        "note": "Highlights minimal exposure to China, which could be seen as a limitation."
+      }
+    ],
+    "analyst_pushback": []
+  },
+  "risk": {
+    "overall_risk_level": "medium",
+    "risks": [
+      {
+        "category": "supply_chain",
+        "title": "Supply constraints on Blackwell Ultra",
+        "severity": 4,
+        "status": "potential",
+        "quantified": true,
+        "quote": "Shipments of Data Center Hopper products to China during the quarter were less than 1% of Data Center revenue.",
+        "explanation": "The quote indicates a supply limitation affecting Data Center revenue, which could constrain growth if demand outpaces supply."
+      },
+      {
+        "category": "margin_cost",
+        "title": "Rising compute infrastructure and compensation costs",
+        "severity": 3,
+        "status": "current",
+        "quantified": true,
+        "quote": "GAAP operating expenses for the second quarter were up 55% from a year ago and up 10% sequentially, and non-GAAP operating expenses were up 54% from a year ago and up 11% sequentially. These increases were driven by higher compute infrastructure and compensation and benefits costs.",
+        "explanation": "The quote indicates rising costs impacting operating expenses, which could pressure margins if not managed."
+      }
+    ]
+  },
+  "issues": [
+    "sentiment: hedging_examples: quote not found, dropped: We expect revenue to be $108.0 billion, plus or minus 2%.",
+    "sentiment: negative_signals: quote not found, dropped: Edge Computing revenue increases were partially offset by slower consumer PC sal",
+    "risk: duplicate quote, dropped: Export restrictions on Data Center Hopper to China",
+    "risk: judge rejected: Data center lease reassignment risk | QUOTE: We expect to reassign these data center leases to third parties.",
+    "risk: judge rejected: Slower consumer PC demand | QUOTE: Edge Computing revenue for the second quarter was $7.2 billion, up 27% from a year ago and up 13% sequentially. The increases were driven by strong sales of Bla"
+  ],
+  "errors": {},
+  "sentiment_quotes": {
+    "kept": 10,
+    "total": 12
+  },
+  "risk_quotes": {
+    "kept": 5,
+    "total": 5
+  }
+}

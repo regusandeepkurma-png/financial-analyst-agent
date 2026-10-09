@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "sentiment": {
+    "overall_tone": "positive",
+    "tone_score": 0.8,
+    "prepared_remarks_score": 0.9,
+    "qa_score": 0.7,
+    "hedging_level": "medium",
+    "hedging_examples": [
+      {
+        "quote": "subject to",
+        "note": "Hedging example from prepared remarks"
+      },
+      {
+        "quote": "depends on",
+        "note": "Hedging example from prepared remarks"
+      },
+      {
+        "quote": "expected",
+        "note": "Hedging example from prepared remarks"
+      },
+      {
+        "quote": "will be",
+        "note": "Hedging example from prepared remarks"
+      }
+    ],
+    "positive_signals": [
+      {
+        "quote": "revenue of $82 billion was up 85% year-over-year and 20% sequentially",
+        "note": "Strong revenue growth highlighted"
+      },
+      {
+        "quote": "record $20 billion to our shareholders",
+        "note": "Shareholder returns emphasized"
+      },
+      {
+        "quote": "Data Center revenue of $75 billion was up 92% year-over-year",
+        "note": "Data Center growth highlighted"
+      },
+      {
+        "quote": "non-GAAP effective tax rate of 16% came just below our prior outlook",
+        "note": "Favorable tax rate noted"
+      }
+    ],
+    "negative_signals": [
+      {
+        "quote": "uncertain whether any imports will be allowed into the country",
+        "note": "China revenue uncertainty expressed"
+      },
+      {
+        "quote": "days sales outstanding was 45 days. Due to favorable timing of collections, we expect to return to the mid-50s in Q2",
+        "note": "Potential cash flow timing concern implied"
+      }
+    ],
+    "analyst_pushback": [
+      {
+        "topic": "segmentation philosophy and competitive differences",
+        "analyst_quote": "What's the philosophy behind giving us the numbers that way? And then, can you talk about any competitive differences between the two segments and this kind of surprising CPU number that you talked about, how do you see that across the two segments as well?",
+        "management_quote": "First of all, Colette meant to say we're increasing our quarterly dividend from $0.01 to $0.25. I think that extra $0.05 would mean a lot to the large shareholders.",
+        "evasive": true
+      },
+      {
+        "topic": "growth expectations vs hyperscaler CapEx",
+        "analyst_quote": "And then, can you talk about any competitive differences between the two segments and this kind of surprising CPU number that you talked about, how do you see that across the two segments as well?",
+        "management_quote": "Yeah. Thanks, Joe. First of all, Colette meant to say we're increasing our quarterly dividend from $0.01 to $0.25. I think that extra $0.05 would mean a lot to the large shareholders.",
+        "evasive": true
+      }
+    ]
+  },
+  "risk": {
+    "overall_risk_level": "medium",
+    "risks": [
+      {
+        "category": "regulatory_export",
+        "title": "Export restrictions on AI chips to China",
+        "severity": 4,
+        "status": "current",
+        "quantified": false,
+        "quote": "As a result, consistent with last quarter, we are not including any China Data Center compute revenue in our outlook.",
+        "explanation": "The transcript explicitly states that China Data Center compute revenue is excluded from outlook due to uncertainty around export licenses, representing a current revenue risk that impacts financial guidance."
+      },
+      {
+        "category": "demand",
+        "title": "Demand uncertainty in Edge Computing segment",
+        "severity": 2,
+        "status": "current",
+        "quantified": false,
+        "quote": "consumer demand fell modestly due to higher memory and system prices.",
+        "explanation": "Consumer demand in Edge Computing declined modestly due to higher prices, indicating a potential headwind in a segment that contributed $6.4 billion in revenue, though the impact is not quantified in financial terms."
+      }
+    ]
+  },
+  "issues": [
+    "sentiment: hedging_examples: quote not found, dropped: likely",
+    "sentiment: positive_signals: quote not found, dropped: Blackwell systems ... fastest product ramp in our company's history",
+    "risk: risk quote not found, dropped: GAAP and non-GAAP operating expenses were up 12% sequentially, primarily due to ",
+    "risk: judge rejected: Supply constraints on Blackwell and Rubin GPUs | QUOTE: In Q1, we increased total supply, inclusive of inventory, purchase commitments, and prepaids to $145 billion. While we are not immune to supply challenges, we r",
+    "risk: judge rejected: Competitive pressure in AI infrastructure markets | QUOTE: The number of partner data centers exceeding 10 megawatts has nearly doubled in just one year, now surpassing 80 sites. Sovereign revenue increased more than 80"
+  ],
+  "errors": {},
+  "sentiment_quotes": {
+    "kept": 12,
+    "total": 14
+  },
+  "risk_quotes": {
+    "kept": 4,
+    "total": 5
+  }
+}
