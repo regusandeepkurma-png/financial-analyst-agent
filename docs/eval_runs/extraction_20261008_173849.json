@@ -1,0 +1,478 @@
+{
+  "doc1": {
+    "crashed": "Failed after 3 attempts: Expecting ',' delimiter: line 141 column 17 (char 3762)"
+  },
+  "doc2": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 82,
+        "pred": {
+          "value": 82.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue of $82 billion was up 85% year-over-year and 20% sequentially.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 74.9,
+        "pred": {
+          "value": 74.9,
+          "unit": "percent",
+          "basis": "GAAP",
+          "quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 91,
+        "pred": {
+          "value": 91.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue is expected to be $91 billion, plus or minus 2%.",
+          "period": "Q2 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      }
+    ],
+    "issues": [
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:gross_margin: quote snapped to exact sentence",
+      "metric:free_cash_flow: basis removed (not stated in quote)",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:tax_rate:GAAP: quote snapped to exact sentence"
+    ],
+    "retries": 0,
+    "raw_metrics": [
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 82.0,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": 85.0,
+        "qoq_change_pct": 20.0,
+        "source_quote": "Total revenue of $82 billion was up 85% year-over-year and 20% sequentially."
+      },
+      {
+        "name": "eps",
+        "basis": null,
+        "value": null,
+        "unit": "USD",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "gross_margin",
+        "basis": "GAAP",
+        "value": 74.9,
+        "unit": "percent",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments."
+      },
+      {
+        "name": "operating_margin",
+        "basis": null,
+        "value": null,
+        "unit": "percent",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "operating_income",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "net_income",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "free_cash_flow",
+        "basis": null,
+        "value": 49.0,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "We generated record free cash flow $49 billion, up from $35 billion in Q4."
+      }
+    ],
+    "raw_guidance": [
+      {
+        "basis": null,
+        "midpoint": 91.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Total revenue is expected to be $91 billion, plus or minus 2%."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 74.9,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 8.5,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP operating expenses are expected to be approximately $8.5 billion and $8.3 billion, respectively."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 16.0,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "fiscal year 2027",
+        "low": 16.0,
+        "high": 18.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year 2027, we expect GAAP and non-GAAP tax rates to be between 16% and 18%, excluding any discrete items from material changes to our tax environment."
+      }
+    ]
+  },
+  "doc3": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 96221,
+        "pred": {
+          "value": 96221.0,
+          "unit": "USD_million",
+          "basis": null,
+          "quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 75.0,
+        "pred": {
+          "value": 75.0,
+          "unit": "percent",
+          "basis": "GAAP",
+          "quote": "Gross margin 75.0 % 0.1 pts 2.6 pts",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "operating_income",
+        "status": "CORRECT",
+        "truth": 63734,
+        "pred": {
+          "value": 63734.0,
+          "unit": "USD_million",
+          "basis": "GAAP",
+          "quote": "Operating income $63,734 19 % 124 %",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "net_income",
+        "status": "CORRECT",
+        "truth": 59688,
+        "pred": {
+          "value": 59688.0,
+          "unit": "USD_million",
+          "basis": "GAAP",
+          "quote": "Net income $59,688 2 % 126 %",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "CORRECT",
+        "truth": 2.46,
+        "pred": {
+          "value": 2.46,
+          "unit": "USD",
+          "basis": "GAAP",
+          "quote": "Diluted earnings per share $2.46 3 % 128 %",
+          "period": "Q2 FY27"
+        },
+        "grounded": false
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 108.0,
+        "pred": {
+          "value": 108.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Outlook Outlook for the third quarter of fiscal 2027 is as follows: \u2022 Revenue is expected to be $108.0 billion, plus or minus 2%.",
+          "period": "Q3 FY27"
+        },
+        "grounded": true
+      }
+    ],
+    "issues": [
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:gross_margin: quote not found in source",
+      "metric:gross_margin: quote not found in source",
+      "metric:operating_income: quote not found in source",
+      "metric:operating_income: quote not found in source",
+      "metric:net_income: quote not found in source",
+      "metric:net_income: quote not found in source",
+      "metric:eps: quote not found in source",
+      "metric:eps: quote not found in source",
+      "metric:free_cash_flow: quote not found in source",
+      "guidance:operating_expenses:non-GAAP: quote not found in source",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "guidance:revenue:GAAP: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:gross_margin:GAAP: quote snapped to exact sentence",
+      "guidance:operating_expenses:GAAP: quote snapped to exact sentence"
+    ],
+    "retries": 0,
+    "raw_metrics": [
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 96221.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 106.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially."
+      },
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 96221.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 106.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially."
+      },
+      {
+        "name": "gross_margin",
+        "basis": "GAAP",
+        "value": 75.0,
+        "unit": "percent",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 2.6,
+        "qoq_change_pct": 0.1,
+        "source_quote": "Gross margin 75.0 % 0.1 pts 2.6 pts"
+      },
+      {
+        "name": "gross_margin",
+        "basis": "non-GAAP",
+        "value": 75.0,
+        "unit": "percent",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 2.5,
+        "qoq_change_pct": null,
+        "source_quote": "Gross margin 75.0 % \u2014 2.5 pts"
+      },
+      {
+        "name": "operating_income",
+        "basis": "GAAP",
+        "value": 63734.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 124.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "Operating income $63,734 19 % 124 %"
+      },
+      {
+        "name": "operating_income",
+        "basis": "non-GAAP",
+        "value": 63956.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 124.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "Operating income $63,956 19 % 124 %"
+      },
+      {
+        "name": "net_income",
+        "basis": "GAAP",
+        "value": 59688.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 126.0,
+        "qoq_change_pct": 2.0,
+        "source_quote": "Net income $59,688 2 % 126 %"
+      },
+      {
+        "name": "net_income",
+        "basis": "non-GAAP",
+        "value": 53954.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 118.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "Net income $53,954 18 % 118 %"
+      },
+      {
+        "name": "eps",
+        "basis": "GAAP",
+        "value": 2.46,
+        "unit": "USD",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 128.0,
+        "qoq_change_pct": 3.0,
+        "source_quote": "Diluted earnings per share $2.46 3 % 128 %"
+      },
+      {
+        "name": "eps",
+        "basis": "non-GAAP",
+        "value": 2.22,
+        "unit": "USD",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 120.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "Diluted earnings per share $2.22 19 % 120 %"
+      },
+      {
+        "name": "free_cash_flow",
+        "basis": "GAAP",
+        "value": 21341.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 40.0,
+        "qoq_change_pct": null,
+        "source_quote": "Free cash flow $21,341 40 %"
+      }
+    ],
+    "raw_guidance": [
+      {
+        "basis": null,
+        "midpoint": 108.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Outlook Outlook for the third quarter of fiscal 2027 is as follows: \u2022 Revenue is expected to be $108.0 billion, plus or minus 2%."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 74.0,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "\u2022 GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 9.2,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "\u2022 GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 9.0,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Non-GAAP operating expenses are expected to be approximately $9.0 billion."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 16.0,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "Fiscal Year 2027",
+        "low": 16.0,
+        "high": 18.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year fiscal 2027, we expect GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to our tax environment."
+      }
+    ]
+  }
+}

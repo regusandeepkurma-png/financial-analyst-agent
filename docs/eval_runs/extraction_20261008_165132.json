@@ -1,0 +1,750 @@
+{
+  "doc1": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 68,
+        "pred": {
+          "value": 68.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue of $68 billion was up 73% year-over-year, accelerating from Q3.",
+          "period": "Q4 2026"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 75,
+        "pred": {
+          "value": 75.0,
+          "unit": "percent",
+          "basis": null,
+          "quote": "GAAP gross margin was 75%, and non-GAAP gross margin was 75.2%, increasing sequentially as Blackwell continued to ramp.",
+          "period": "Q4 2026"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 78,
+        "pred": {
+          "value": 78.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue is expected to be $78 billion, plus or minus 2%.",
+          "period": "Q1 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      }
+    ],
+    "issues": [
+      "metric:free_cash_flow: quote snapped to exact sentence",
+      "guidance:tax_rate:GAAP: quote snapped to exact sentence",
+      "guidance:tax_rate:non-GAAP: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:revenue:GAAP: unsupported low=76.44 removed",
+      "guidance:revenue:GAAP: unsupported high=79.56 removed",
+      "guidance:revenue:non-GAAP: basis removed (not stated in quote)",
+      "guidance:revenue:non-GAAP: unsupported low=76.44 removed",
+      "guidance:revenue:non-GAAP: unsupported high=79.56 removed"
+    ],
+    "retries": 0,
+    "raw_metrics": [
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 68.0,
+        "unit": "USD_billion",
+        "period": "Q4 2026",
+        "yoy_change_pct": 73.0,
+        "qoq_change_pct": null,
+        "source_quote": "Total revenue of $68 billion was up 73% year-over-year, accelerating from Q3."
+      },
+      {
+        "name": "eps",
+        "basis": null,
+        "value": null,
+        "unit": "other",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "gross_margin",
+        "basis": null,
+        "value": 75.0,
+        "unit": "percent",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "GAAP gross margin was 75%, and non-GAAP gross margin was 75.2%, increasing sequentially as Blackwell continued to ramp."
+      },
+      {
+        "name": "operating_margin",
+        "basis": null,
+        "value": null,
+        "unit": "other",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "operating_income",
+        "basis": null,
+        "value": null,
+        "unit": "other",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "net_income",
+        "basis": null,
+        "value": null,
+        "unit": "other",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "free_cash_flow",
+        "basis": null,
+        "value": 35.0,
+        "unit": "USD_billion",
+        "period": "Q4 2026",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "We generated free cash flow of $35 billion in Q4 and $97 billion in fiscal year 2026."
+      }
+    ],
+    "raw_guidance": [
+      {
+        "basis": "GAAP",
+        "midpoint": 74.9,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 75.0,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 7.7,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP operating expenses are expected to be approximately $7.7 billion and $7.5 billion, respectively, including stock-based compensation expense of $1.9 billion."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 7.5,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP operating expenses are expected to be approximately $7.7 billion and $7.5 billion, respectively, including stock-based compensation expense of $1.9 billion."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": null,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "fiscal year 2027",
+        "low": 7.0,
+        "high": 19.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year fiscal year 2027, we expect GAAP and non-GAAP tax rates to be in between 7% and 19%, excluding any discrete items and material changes to our tax environment."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": null,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "fiscal year 2027",
+        "low": 7.0,
+        "high": 19.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year fiscal year 2027, we expect GAAP and non-GAAP tax rates to be in between 7% and 19%, excluding any discrete items and material changes to our tax environment."
+      },
+      {
+        "basis": null,
+        "midpoint": 78.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Total revenue is expected to be $78 billion, plus or minus 2%."
+      },
+      {
+        "basis": null,
+        "midpoint": 78.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q1 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Total revenue is expected to be $78 billion, plus or minus 2%."
+      }
+    ]
+  },
+  "doc2": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "MISSING",
+        "truth": 82,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "gross_margin",
+        "status": "MISSING",
+        "truth": 74.9,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 91,
+        "pred": {
+          "value": 91.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Total revenue is expected to be $91 billion, plus or minus 2%.",
+          "period": "Q2 2027"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "net_income",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "OK_NULL",
+        "truth": null,
+        "pred": null,
+        "grounded": null
+      }
+    ],
+    "issues": [
+      "metric:gross_margin: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)"
+    ],
+    "retries": 0,
+    "raw_metrics": [
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "Total revenue of $82 billion was up 85% year-over-year and 20% sequentially."
+      },
+      {
+        "name": "eps",
+        "basis": null,
+        "value": null,
+        "unit": "USD",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "gross_margin",
+        "basis": null,
+        "value": null,
+        "unit": "percent",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "GAAP gross margin was 74.9% and non-GAAP gross margin was 75%, largely flat sequentially by Blackwell systems continued to account for most of our shipments."
+      },
+      {
+        "name": "operating_margin",
+        "basis": null,
+        "value": null,
+        "unit": "percent",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "operating_income",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "net_income",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": ""
+      },
+      {
+        "name": "free_cash_flow",
+        "basis": null,
+        "value": null,
+        "unit": "USD_billion",
+        "period": "Q1 2027",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "We generated record free cash flow $49 billion, up from $35 billion in Q4."
+      }
+    ],
+    "raw_guidance": [
+      {
+        "basis": null,
+        "midpoint": 91.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Total revenue is expected to be $91 billion, plus or minus 2%."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 74.9,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 75.0,
+        "range_pct": 0.5,
+        "metric": "gross_margin",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75%, respectively, plus or minus 50 basis points."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 8.5,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP operating expenses are expected to be approximately $8.5 billion and $8.3 billion, respectively."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 8.3,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q2 2027",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "GAAP and non-GAAP operating expenses are expected to be approximately $8.5 billion and $8.3 billion, respectively."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 16.0,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "fiscal year 2027",
+        "low": 16.0,
+        "high": 18.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year 2027, we expect GAAP and non-GAAP tax rates to be between 16% and 18%, excluding any discrete items from material changes to our tax environment."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 16.0,
+        "range_pct": null,
+        "metric": "tax_rate",
+        "period": "fiscal year 2027",
+        "low": 16.0,
+        "high": 18.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year 2027, we expect GAAP and non-GAAP tax rates to be between 16% and 18%, excluding any discrete items from material changes to our tax environment."
+      }
+    ]
+  },
+  "doc3": {
+    "rows": [
+      {
+        "metric": "revenue",
+        "status": "CORRECT",
+        "truth": 96221,
+        "pred": {
+          "value": 96221.0,
+          "unit": "USD_million",
+          "basis": null,
+          "quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "gross_margin",
+        "status": "CORRECT",
+        "truth": 75.0,
+        "pred": {
+          "value": 75.0,
+          "unit": "percent",
+          "basis": "GAAP",
+          "quote": "NVIDIA CORPORATION RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES ($ In millions, except per share data) (Unaudited) Three Months Ended Six Months Ended July 26, April 26, July 27, July 26, July 27, 2026 2026 2025 2026 2025 GAAP cost of revenue $ 24,079 $ 20,458 $ 12,890 $ 44,538 $ 30,284 GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521 GAAP gross margin 75.0 % 74.9 % 72.4 % 75.0 % 66.6 % Acquisition-related and other costs (A) Other \u2014 \u2014 Non-GAAP cost of revenue $ 24,033 $ 20,383 $ 12,841 $ 44,417 $ 30,110 Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695 Non-GAAP gross margin* 75.0 % 75.0 % 72.5 % 75.0 % 66.8 % GAAP operating expenses $ 8,408 $ 7,621 $ 5,413 $ 16,029 $ 10,443 Acquisition-related and other costs (A) (176) (172) (37) (348) (74) Other \u2014 \u2014 (15) \u2014 (15) Non-GAAP operating expenses $ 8,232 $ 7,449 $ 5,361 $ 15,681 $ 10,354 GAAP operating income $ 63,734 $ 53,536 $ 28,440 $ 117,270 $ 50,078 Total impact of non-GAAP adjustments to operating income Non-GAAP operating income* $ 63,956 $ 53,783 $ 28,541 $ 117,739 $ 50,341 GAAP other income, net $ 7,773 $ 16,367 $ 2,766 $ 24,140 $ 3,039 Gains from equity securities, net (7,771) (15,936) (2,247) (23,707) (2,073) Other (B) Non-GAAP other income, net $ $ $ $ $ GAAP net income $ 59,688 $ 58,321 $ 26,422 $ 118,010 $ 45,197 Total pre-tax impact of non-GAAP adjustments (7,251) (15,663) (2,145) (22,915) (1,808) Income tax impact of non-GAAP adjustments 1,517 2,890 4,407 Tax expense from OBBBA** \u2014 \u2014 \u2014 Non-GAAP net income* $ 53,954 $ 45,548 $ 24,763 $ 99,502 $ 43,855 Diluted net income per share GAAP $ 2.46 $ 2.39 $ 1.08 $ 4.85 $ 1.84 Non-GAAP* $ 2.22 $ 1.87 $ 1.01 $ 4.09 $ 1.78 Weighted average shares used in diluted net income per share computation 24,285 24,391 24,532 24,338 24,571 GAAP net cash provided by operating activities $ 24,077 $ 50,344 $ 15,365 $ 74,421 $ 42,779 Purchases related to property and equipment and intangible assets (2,677) (1,757) (1,894) (4,434) (3,122) Principal payments on property and equipment and intangible assets (59) (33) (21) (92) (73) Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584 *Includes H20 charges/(releases), net, which were $4.5 billion and none for the first quarter, and ($180 million) and insignificant for the second quarter, of fiscal years 2026 and 2027, respectively.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "operating_income",
+        "status": "CORRECT",
+        "truth": 63734,
+        "pred": {
+          "value": 63734.0,
+          "unit": "USD_million",
+          "basis": "GAAP",
+          "quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "net_income",
+        "status": "CORRECT",
+        "truth": 59688,
+        "pred": {
+          "value": 59688.0,
+          "unit": "USD_million",
+          "basis": "GAAP",
+          "quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "eps_diluted",
+        "status": "CORRECT",
+        "truth": 2.46,
+        "pred": {
+          "value": 2.46,
+          "unit": "USD",
+          "basis": "GAAP",
+          "quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications.",
+          "period": "Q2 FY27"
+        },
+        "grounded": true
+      },
+      {
+        "metric": "guidance_revenue_next_quarter",
+        "status": "CORRECT",
+        "truth": 108.0,
+        "pred": {
+          "value": 108.0,
+          "unit": "USD_billion",
+          "basis": null,
+          "quote": "Outlook Outlook for the third quarter of fiscal 2027 is as follows: \u2022 Revenue is expected to be $108.0 billion, plus or minus 2%.",
+          "period": "Q3 FY27"
+        },
+        "grounded": true
+      }
+    ],
+    "issues": [
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:revenue: number 96221.0 not in its quote",
+      "metric:gross_margin: number 2.6 not in its quote",
+      "metric:gross_margin: number 0.1 not in its quote",
+      "metric:gross_margin: number 75.0 not in its quote",
+      "metric:gross_margin: number 2.5 not in its quote",
+      "metric:operating_income: number 63734.0 not in its quote",
+      "metric:operating_income: number 63956.0 not in its quote",
+      "metric:net_income: number 59688.0 not in its quote",
+      "metric:net_income: number 53954.0 not in its quote",
+      "metric:free_cash_flow: quote not found in source",
+      "guidance:operating_expenses:non-GAAP: quote not found in source",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:revenue: quote snapped to exact sentence",
+      "metric:revenue: basis removed (not stated in quote)",
+      "metric:gross_margin: quote snapped to exact sentence",
+      "metric:gross_margin: quote snapped to exact sentence",
+      "metric:operating_income: quote snapped to exact sentence",
+      "metric:operating_income: quote snapped to exact sentence",
+      "metric:net_income: quote snapped to exact sentence",
+      "metric:net_income: quote snapped to exact sentence",
+      "metric:eps: quote snapped to exact sentence",
+      "metric:eps: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: quote snapped to exact sentence",
+      "guidance:revenue:GAAP: basis removed (not stated in quote)",
+      "guidance:gross_margin:GAAP: quote snapped to exact sentence",
+      "guidance:operating_expenses:GAAP: quote snapped to exact sentence"
+    ],
+    "retries": 0,
+    "raw_metrics": [
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 96221.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 106.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially."
+      },
+      {
+        "name": "revenue",
+        "basis": null,
+        "value": 96221.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 106.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "Revenue Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially."
+      },
+      {
+        "name": "gross_margin",
+        "basis": "GAAP",
+        "value": 75.0,
+        "unit": "percent",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 2.6,
+        "qoq_change_pct": 0.1,
+        "source_quote": "NVIDIA CORPORATION RECONCILIATION OF GAAP TO NON-GAAP FINANCIAL MEASURES ($ In millions, except per share data) (Unaudited) Three Months Ended Six Months Ended July 26, April 26, July 27, July 26, July 27, 2026 2026 2025 2026 2025 GAAP cost of revenue $ 24,079 $ 20,458 $ 12,890 $ 44,538 $ 30,284 GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521 GAAP gross margin 75.0 % 74.9 % 72.4 % 75.0 % 66.6 % Acquisition-related and other costs (A) Other \u2014 \u2014 Non-GAAP cost of revenue $ 24,033 $ 20,383 $ 12,841 $ 44,417 $ 30,110 Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695 Non-GAAP gross margin* 75.0 % 75.0 % 72.5 % 75.0 % 66.8 % GAAP operating expenses $ 8,408 $ 7,621 $ 5,413 $ 16,029 $ 10,443 Acquisition-related and other costs (A) (176) (172) (37) (348) (74) Other \u2014 \u2014 (15) \u2014 (15) Non-GAAP operating expenses $ 8,232 $ 7,449 $ 5,361 $ 15,681 $ 10,354 GAAP operating income $ 63,734 $ 53,536 $ 28,440 $ 117,270 $ 50,078 Total impact of non-GAAP adjustments to operating income Non-GAAP operating income* $ 63,956 $ 53,783 $ 28,541 $ 117,739 $ 50,341 GAAP other income, net $ 7,773 $ 16,367 $ 2,766 $ 24,140 $ 3,039 Gains from equity securities, net (7,771) (15,936) (2,247) (23,707) (2,073) Other (B) Non-GAAP other income, net $ $ $ $ $ GAAP net income $ 59,688 $ 58,321 $ 26,422 $ 118,010 $ 45,197 Total pre-tax impact of non-GAAP adjustments (7,251) (15,663) (2,145) (22,915) (1,808) Income tax impact of non-GAAP adjustments 1,517 2,890 4,407 Tax expense from OBBBA** \u2014 \u2014 \u2014 Non-GAAP net income* $ 53,954 $ 45,548 $ 24,763 $ 99,502 $ 43,855 Diluted net income per share GAAP $ 2.46 $ 2.39 $ 1.08 $ 4.85 $ 1.84 Non-GAAP* $ 2.22 $ 1.87 $ 1.01 $ 4.09 $ 1.78 Weighted average shares used in diluted net income per share computation 24,285 24,391 24,532 24,338 24,571 GAAP net cash provided by operating activities $ 24,077 $ 50,344 $ 15,365 $ 74,421 $ 42,779 Purchases related to property and equipment and intangible assets (2,677) (1,757) (1,894) (4,434) (3,122) Principal payments on property and equipment and intangible assets (59) (33) (21) (92) (73) Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584 *Includes H20 charges/(releases), net, which were $4.5 billion and none for the first quarter, and ($180 million) and insignificant for the second quarter, of fiscal years 2026 and 2027, respectively."
+      },
+      {
+        "name": "gross_margin",
+        "basis": "non-GAAP",
+        "value": 75.0,
+        "unit": "percent",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 2.5,
+        "qoq_change_pct": null,
+        "source_quote": "GAAP and non-GAAP gross margins were approximately flat sequentially as our Blackwell architecture remains the vast majority of our revenue."
+      },
+      {
+        "name": "operating_income",
+        "basis": "GAAP",
+        "value": 63734.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 124.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "operating_income",
+        "basis": "non-GAAP",
+        "value": 63956.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 124.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "net_income",
+        "basis": "GAAP",
+        "value": 59688.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 126.0,
+        "qoq_change_pct": 2.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "net_income",
+        "basis": "non-GAAP",
+        "value": 53954.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 118.0,
+        "qoq_change_pct": 18.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "eps",
+        "basis": "GAAP",
+        "value": 2.46,
+        "unit": "USD",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 128.0,
+        "qoq_change_pct": 3.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "eps",
+        "basis": "non-GAAP",
+        "value": 2.22,
+        "unit": "USD",
+        "period": "Q2 FY27",
+        "yoy_change_pct": 120.0,
+        "qoq_change_pct": 19.0,
+        "source_quote": "CFO Commentary on Second Quarter Fiscal 2027 Results Q2 Fiscal 2027 Summary GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts Operating expenses $8,408 $7,621 $5,413 10 % 55 % Operating income $63,734 $53,536 $28,440 19 % 124 % Net income $59,688 $58,321 $26,422 2 % 126 % Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 % Non-GAAP ($ in millions, except earnings per share) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Revenue $96,221 $81,615 $46,743 18 % 106 % Gross margin 75.0 % 75.0 % 72.5 % \u2014 2.5 pts Operating expenses $8,232 $7,449 $5,361 11 % 54 % Operating income $63,956 $53,783 $28,541 19 % 124 % Net income $53,954 $45,548 $24,763 18 % 118 % Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 % Revenue by Reportable Segments ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Compute & Networking $88,299 $74,550 $41,331 18 % 114 % Graphics 7,922 7,065 5,412 12 % 46 % Total $96,221 $81,615 $46,743 18 % 106 % Revenue by Market Platform ($ in millions) Q2 FY27 Q1 FY27 Q2 FY26 Q/Q Y/Y Data Center $89,023 $75,246 $41,096 18 % 117 % Hyperscale 48,710 43,050 24,168 13 % 102 % AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 % Edge Computing 7,198 6,369 5,647 13 % 27 % Total $96,221 $81,615 $46,743 18 % 106 % We specialize in markets where our computing platforms can provide tremendous acceleration for applications."
+      },
+      {
+        "name": "free_cash_flow",
+        "basis": "GAAP",
+        "value": 21341.0,
+        "unit": "USD_million",
+        "period": "Q2 FY27",
+        "yoy_change_pct": null,
+        "qoq_change_pct": null,
+        "source_quote": "Free cash flow $21,341"
+      }
+    ],
+    "raw_guidance": [
+      {
+        "basis": null,
+        "midpoint": 108.0,
+        "range_pct": 2.0,
+        "metric": "revenue",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Outlook Outlook for the third quarter of fiscal 2027 is as follows: \u2022 Revenue is expected to be $108.0 billion, plus or minus 2%."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 74.0,
+        "range_pct": 50.0,
+        "metric": "gross_margin",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "\u2022 GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 9.2,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "\u2022 GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively."
+      },
+      {
+        "basis": "non-GAAP",
+        "midpoint": 9.0,
+        "range_pct": null,
+        "metric": "operating_expenses",
+        "period": "Q3 FY27",
+        "low": null,
+        "high": null,
+        "unit": "USD_billion",
+        "qualitative": null,
+        "source_quote": "Non-GAAP operating expenses are expected to be approximately $9.0 billion."
+      },
+      {
+        "basis": "GAAP",
+        "midpoint": 16.0,
+        "range_pct": 18.0,
+        "metric": "tax_rate",
+        "period": "FY27",
+        "low": 16.0,
+        "high": 18.0,
+        "unit": "percent",
+        "qualitative": null,
+        "source_quote": "For the full year fiscal 2027, we expect GAAP and non-GAAP tax rates to be between 16.0% and 18.0%, excluding any discrete items and material changes to our tax environment."
+      }
+    ]
+  }
+}
