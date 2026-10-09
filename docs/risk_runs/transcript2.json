@@ -1,0 +1,16 @@
+{
+  "result": {
+    "overall_risk_level": "low",
+    "risks": []
+  },
+  "issues": [
+    "risk quote not found, dropped: The $20 billion is for standalone CPU. And remember, we have Vera is used in thr",
+    "risk quote not found, dropped: GAAP and non-GAAP operating expenses were up 12% sequentially, primarily due to ",
+    "risk quote not found, dropped: Demand for AI infrastructure continues to expand at an unprecedented pace. The b",
+    "judge rejected: Supply constraints on Blackwell and Rubin GPUs",
+    "judge rejected: Restrictions on China Data Center compute revenue"
+  ],
+  "retries": 0,
+  "quotes_kept": 2,
+  "quotes_total": 5
+}

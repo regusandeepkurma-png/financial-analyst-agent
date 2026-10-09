@@ -1,0 +1,41 @@
+{
+  "result": {
+    "overall_risk_level": "medium",
+    "risks": [
+      {
+        "category": "supply_chain",
+        "title": "Supply constraints on Blackwell Ultra",
+        "severity": 4,
+        "status": "potential",
+        "quantified": true,
+        "quote": "Shipments of Data Center Hopper products to China during the quarter were less than 1% of Data Center revenue.",
+        "explanation": "The quote indicates limited supply to China, which could restrict revenue growth from that market."
+      },
+      {
+        "category": "margin_cost",
+        "title": "Rising compute infrastructure and compensation costs",
+        "severity": 3,
+        "status": "current",
+        "quantified": true,
+        "quote": "GAAP operating expenses for the second quarter were up 55% from a year ago and up 10% sequentially, and non-GAAP operating expenses were up 54% from a year ago and up 11% sequentially. These increases were driven by higher compute infrastructure and compensation and benefits costs.",
+        "explanation": "The quote describes cost pressures that could erode margins, though no specific financial impact is quantified."
+      },
+      {
+        "category": "macro",
+        "title": "Extended payment terms increasing accounts receivable",
+        "severity": 3,
+        "status": "current",
+        "quantified": true,
+        "quote": "Accounts receivable was $63.1 billion with 60 days sales outstanding (DSO), up from 45 days sequentially, due to extended payment terms on large, multi-quarter agreements with certain investment-grade customers.",
+        "explanation": "The quote highlights cash flow risk from longer receivable cycles, which may strain liquidity."
+      }
+    ]
+  },
+  "issues": [
+    "duplicate quote, dropped: Export restrictions to China",
+    "judge rejected: Data center lease commitments and reassignment risk"
+  ],
+  "retries": 0,
+  "quotes_kept": 5,
+  "quotes_total": 5
+}
